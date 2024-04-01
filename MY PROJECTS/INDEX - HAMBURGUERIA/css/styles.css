@@ -272,6 +272,10 @@ h2{
     color: #5F5F5F;
 }
 
+.rodape img{
+    width: 10%;
+}
+
     /* APLICANDO RESPONSIVIDADE */
 @media (max-width:430px){
 
@@ -369,9 +373,8 @@ h2{
     .products_image{
         width: 60%;
     }
-}
 
-/* FORMATAÇÃO RODAPÉ */
+    /* FORMATAÇÃO RODAPÉ */
 
 .rodape{
     margin-top: 8%;
@@ -389,6 +392,7 @@ h2{
     margin: auto;
 }
 
+}
 @media (max-width:375px){
     .section-one{
         gap: 90px;

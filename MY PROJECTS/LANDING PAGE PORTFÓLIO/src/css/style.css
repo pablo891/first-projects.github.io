@@ -48,7 +48,6 @@ html{
 
     .line-1{
         max-width: 1700px;
-        margin: auto;
         border: 1px solid white;
     }
 /* SECTION DE APRESENTAÇÃO */
@@ -160,18 +159,17 @@ html{
     }
 
     /* ABERTURA DA SECTION DA BIOGRAFIA */
-    .section-biografia{
+    .card-front .card-back{
         display: flex;
         gap: 100px;
     }
 
     .img-dev{
-        width: 30%;
-        border-radius: 60%;
+        width: 25%;
+        border-radius: 10px;
     }
 
     .info-biografia{
-        padding: 3%;
         display: flex;
         flex-direction: column;
         gap: 25px;
@@ -207,6 +205,53 @@ html{
         border-radius: 4px;
     }
 
+    
+    .card{
+        display: flex;
+        width: auto;
+        color: antiquewhite;
+        cursor: pointer;
+    }
+    
+    .card-content{
+        width: auto;
+        position: relative;
+        padding: 15rem 15rem;
+        transform-style: preserve-3d;
+        transition: transform 4s;
+    }
+    
+    .card:hover .card-content{
+        transform: rotateY(180deg);
+    }
+    
+    .card-content{
+        width: 100%;
+    }
+    .card-front, .card-back{
+        position: absolute;
+        inset: 0;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
+    
+    .card-front::before{
+        content: "";
+        position: absolute;
+        inset: 1rem;
+        border: 3px solid yellow;
+        transform: translateZ(2rem);
+    }
+    
+    .card-back{
+        transform: rotateY(180deg);
+        gap: 0.5rem;
+        border-radius: 8px;
+    }
+    
     /* FORMATAÇÃO DA SECTION "MEUS PROJETOS" */
     .section-projetos{
         display: flex;
