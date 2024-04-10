@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 30%;
+            height: 100vh;
+            background-color: rgb(255, 0, 0);
+            display: flex;
+        }
+
+        .btn-menu{
+            width: 30%;
+            border: none;
+            height: 6vh;
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <button class="btn-menu">Menu</button>
+    <div class="container">
+        
+
+    <div id="list">
+        <h2 style="margin: auto;"> Criando lista não ordenada</h2>
+
+        <ul style="margin: auto;">
+            <li>Professor</li>
+            <li>Aluno</li>
+            <li>Gestores</li>
+        </ul>
+
+        <h2 style="margin: auto;">Criando lista ordenada</h2>
+        <ol style="margin: auto;">
+
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+        
+        <button id="btn-one">Fazer alteração</button>
+        <button id="btn-two" onclick="addList()">Adicionar Item</button>
+
+            <script src="script.js"></script>
+
+        </div>
+    </div> 
+</body>
+</html>

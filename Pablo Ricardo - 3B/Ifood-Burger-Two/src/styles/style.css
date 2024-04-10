@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,127,143,1) 50%, rgba(9,98,121,0.8688725490196079) 100%);
+}
+
+#cabecalho {
+    width: 100%;
+    height: 62vh;
+    background-color: rgb(24,24,27);
+    background-image: url(../images/hamburguer.jpg);
+    background-size: cover;
+}
+
+.cabecalho__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    height: 62vh;
+}
+
+.cabecalho__container img {
+    width: 15%;
+    border-radius: 500px;
+    background-color: aliceblue;
+}
+
+.cabecalho__container h2 {
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-family: inter;
+    color: #f6f7f8;
+}
+
+.funcionamento {
+    width: 256px;
+    padding: 8px;
+    background-color: #54CC0A;
+    color: #f6f7f8;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.12rem;
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.titulo__cardapio {
+    text-align: center;
+    margin-top: 46px;
+    font-size: 2.12rem;
+    font-family: roboto;
+    color: #f6f7f8;
+    font-weight: bold;
+}
+
+#principal {
+    margin-top: 34px;
+}
+
+.principal__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.principal__container__burger {
+    background-color: #ced2dd;
+    border-radius: 20px;
+    width: 550px;
+    height: 25vh;
+    display: flex;
+    gap: 14px;
+}
+
+.bebidas_title  {
+    color: #f6f7f8;
+    font-weight: bold;
+    font-family: roboto;
+}
+
+.lado__esquerdo {
+    width: 50%;
+}
+
+
+.lado__esquerdo > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.lado__direito__descricao {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lado__direito__descricao h4{ 
+    font-size: 1.3rem;
+    font-family: roboto;
+    font-weight: bold;
+   
+}
+
+.lado__direito__descricao p {
+    font-size: 1rem;
+    font-family: roboto;
+}
+
+.lado__direito__descricao__preco {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.lado__direito__descricao__preco span {
+    font-size: 1.5rem;
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.lado__direito__descricao__preco button {
+    background-image: url(../images/carrinho.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 71px;
+    border: none;
+    cursor: pointer;
+}
+
+.lado__direito__descricao__preco button span{
+    display: none;
+}
+
+.bebidas_title {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 2rem;
+    font-family: roboto;
+}
+
+.lado__esquerdo__bebidas {
+    width: 35%;
+}
+
+.lado__esquerdo__bebidas > img {
+    width: 100%;
+    height: 100%;
+}
+
+.lado__direito__descricao__preco__bebidas {
+    display: flex;
+    gap: 200PX;
+    justify-content: flex-start;
+    margin-top: 35px;
+    height: 4.2vh;
+    width: 25vw;
+}
+
+.lado__direito__descricao__preco__bebidas> span {
+    font-size: 1.5rem;
+    font-family: roboto;
+    font-weight: bold;
+    width: 100%;
+}
+
+.lado__direito__descricao__preco__bebidas button {
+    background-image: url(../images/carrinho.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70%;
+    border: none;
+    cursor: pointer;
+}
+
+.lado__direito__descricao__preco__bebidas button span{
+    display: none;
+}
+
+/*Modal*/
+#modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* Barra de Rolagem */
+    overflow:auto;
+}
+
+.modal__container {
+    width: 100%;
+    max-width: 653px;
+    background-color: #f6f7f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    border-radius: 4px;
+}
+
+.modal__container h2 {
+    margin-top: 23px;
+    text-align: center;
+}
+
+.modal__conteudo {
+    width: 100%;
+    max-width: 582px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: roboto;
+ 
+}
+
+.buttonModalRemove {
+    font-size: 1.1rem;
+    font-family: roboto;
+    font-weight: bold;
+    border: none;
+    background-color: #FF3131;
+    color: #f6f7f8;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal__conteudo__container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.endereco {
+    font-family: roboto;
+    margin-top: 14px;
+    margin-bottom: 4px;
+}
+
+.endereco__campo {
+    width: 100%;
+    max-width: 582px;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.endereco__campo::placeholder {
+    color: #C1C1C1;
+}
+
+.finalizar {
+    margin-top: 32px;
+    width: 100%;
+    max-width: 582px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-family: roboto;
+    cursor: pointer;
+}
+
+.finalizar button {
+    width: 100%;
+    max-width: 191px;
+    height: 6vh;
+    padding: 8px;
+    font-size: 1rem;
+    font-family: roboto;
+    font-weight: bold;
+    color: #f6f7f8;
+    background-color: #54CC0A;
+    border: none;
+    border-radius: 4px;
+}
+/*Fim Modal*/
+
+#rodape {
+    margin-top: 30px;
+    background-color: #FF3131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px
+}
+
+#rodape p {
+    font-size: 1.2rem;
+    color: #f6f7f8;
+    cursor: pointer;
+}
+
+#rodape img {
+    width: 3%;
+}
