@@ -1,158 +1,244 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-        <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ifood - Burguer</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="IMAGES-BURGER" type="icon" href="../src/IMAGES-BURGER/Ifood • Burger.png">
 
-        </head>
-            <body>
-                <!-- Criando menu -->
-                    <header id="cabecalho">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ifood - Burguer</title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="IMAGES-BURGER" type="icon" href="../src/IMAGES-BURGER/Ifood • Burger.png">
+<link rel="shortcut icon" href="../src/IMAGES-BURGER/burguer-logo-favicon.ico" type="image/x-icon">
 
-                        <!-- Organização do menu -->
-                        <nav class="container">
-                            <img src="../src/IMAGES-BURGER/Ifood • Burger.png" alt="Hamburguer delicioso gigante">
-                            <a class="links-ancora" href="">Início</a>
-                            <a class="links-ancora" href="">Burguers</a>
-                            <a class="links-ancora" href="">Contato</a>
-                        </nav>
+</head>
+<body>
+<!-- Criando menu -->
+    <header id="cabecalho">
 
-                    </header>
+        <!-- Organização do menu -->
+        <nav class="container">
+            <img src="../src/IMAGES-BURGER/Ifood • Burger.png" alt="Hamburguer delicioso gigante">
+            <a class="links-ancora" href="">Início</a>
+            <a class="links-ancora" href="#source-catalog">Burguers</a>
+            <a class="links-ancora" href="">Contato</a>
+        </nav>
 
-                    <!-- Abertura da tag semântica principal -->
+    </header>
+
+        <!-- Abertura da tag semântica principal -->
 
 
-                    <section class="section-one">
-                
-                            <div class="container-one">           
+    <section class="section-one">
 
-                                    <span class="titulo">O Hamburguer mais delicioso. <img  class="emoji-hungry" src="../src/IMAGES-BURGER/emoji ofc.png" alt="emoji com fome"></span>
+            <div class="container-one">           
 
-                                    <p class="texto-ancora">A primeira hamburgueria virtual que você faz o pedido online e come o burger através do computador.</p>
+                <span class="titulo">O Hamburguer mais delicioso. <img  class="emoji-hungry" src="../src/IMAGES-BURGER/emoji ofc.png" alt="emoji com fome"></span>
 
-                                    <button class="btn-pedido">
-                                        <span><a href="#" class="btn-texto">Fazer pedido</a></span>
-                                    </button>
+                <p class="texto-ancora">A primeira hamburgueria virtual que você faz o pedido online e come o burger através do computador.</p>
+
+                <button class="btn-pedido">
+                    <span class="btn-texto">Fazer pedido</span>
+                </button>
+
+            </div>
+            <img src="../src/IMAGES-BURGER/Burger-principal.png" alt="Picture do Burguer Principal" class="burguer-img">
+
+
+    </section>
+
+    <!-- Compartimento da zona de pesquisa -->
+
+    <section class="section-two">
+
+            <!-- Abertura da pesquisa -->
+                        
+            <h2>Pesquise o seu Hamburguer favorito!</h2>
+
+            <div class="section-two-inputs">
+                <input class="inputs lupa" type="search" placeholder="Digite o nome do Burguer">
             
-                            </div>
-                                    <img src="../src/IMAGES-BURGER/Burger-principal.png" alt="Picture do Burguer Principal" class="burguer-img">
+                <select class="inputs categoria">
 
+                    <option>Seleção de Categoria</option>
 
-                    </section>
+                </select>
+            </div>
+    
+    </section>  
 
-                    <!-- Compartimento da zona de pesquisa -->
+        <!-- Abrindo o catálogo dos burguers -->
+    <main id="source-catalog">
 
-                    <section class="section-two">
-            
-                            <!-- Abertura da pesquisa -->
-                                        
-                            <h2>Pesquise o seu Hamburguer favorito!</h2>
+        <section class="principal__products">
+                    <!-- Criando propaganda do produto 1 -->
 
-                            <div class="section-two-inputs">
-                                    <input class="inputs lupa" type="search" placeholder="Digite o nome do Burguer">
-                                
-                                    <select class="inputs categoria">
+            <a class="products-item" href="#">
+                <div class="promocao">Promoção</div>
+                <img src="../src/IMAGES-BURGER/burger1.png" alt="Hamburguer 1 do catálogo" class="products_image">
+                <div class="infoTotal">
+                    <div class="infor">
+                        <span class="products products products-category">Tradicional</span>
+                        <span class="products products products-name">Texas Burguer</span>
+                        <span class="products products products-price">R$25,50</span>
+                    </div>
 
-                                        <option>Seleção de Categoria</option>
-
-                                    </select>
-                            </div>
+                    <button class="buyItem"
+                    onclick="pedido(event)"
+                    data-category="Tradicional"
+                    data-name="Texas Burguer"
+                    data-price="25.50"
+                    ></button>
                     
-                    </section>  
+                </div>
+            </a>
 
-                     <!-- Abrindo o catálogo dos burguers -->
-                    <main class="source-catalog">
-                
+            <!-- Propaganda do produto 2 -->
 
-                            
+            <a class="products-item" href="#">
+                <div class="promocao">Promoção</div>
+                <img src="../src/IMAGES-BURGER/burger2.png" alt="" class="products_image">
+                <div class="infoTotal">
+                    <div class="infor">
+                        <span class="products products products-category">Monster</span>
+                        <span class="products products products-name">Double Cheese</span>
+                        <span class="products products products-price">R$29,90</span>
+                    </div>
 
-                                <section class="principal__products">
-                                    <!-- Criando propaganda do produto 1 -->
+                    <button class="buyItem"
+                    onclick="pedido(event)"
+                    data-category="Monster"
+                    data-name="Double Cheese"
+                    data-price="29.90"
+                    ></button>
+                    
+                </div>
+            </a>
 
-                                <a class="products-item" href="#">
-                                    <div class="promocao">Promoção</div>
-                                    <img src="../src/IMAGES-BURGER/burger1.png" alt="Hamburguer 1 do catálogo" class="products_image">
-                                    <div class="infor">
-                                        <span class="products products products-category">Tradicional</span>
-                                        <span class="products products products-name">Texas Burguer</span>
-                                        <span class="products products products-price">R$25,50</span>
-                                    </div>
-                                </a>
+            <!-- Propaganda do produto 3 -->
 
-                                <!-- Propaganda do produto 2 -->
+            <a class="products-item" href="#">
 
-                                <a class="products-item" href="#">
-                                    <div class="promocao">Promoção</div>
-                                    <img src="../src/IMAGES-BURGER/burger2.png" alt="" class="products_image">
-                                    <div class="infor">
-                                        <span class="products products-category">Tradicional</span>
-                                        <span class="products products-name">Texas Burguer</span>
-                                        <span class="products products-price">R$25,50</span>
-                                    </div>
-                                </a>
+                <img src="../src/IMAGES-BURGER/burger3.png" alt="" class="products_image">
+                <div class="infoTotal">
+                    <div class="infor">
+                        <span class="products products products-category">Monster</span>
+                        <span class="products products products-name">Triple Cheese</span>
+                        <span class="products products products-price">R$38,99</span>
+                    </div>
 
-                                <!-- Propaganda do produto 3 -->
+                    <button class="buyItem"
+                    onclick="pedido(event)"
+                    data-name="Triple Cheese"
+                    data-price="38.99"
+                    ></button>
+                    
+                </div>
+            </a>
 
-                                <a class="products-item" href="#">
-
-                                    <img src="../src/IMAGES-BURGER/burger3.png" alt="" class="products_image">
-                                    <div class="infor">
-                                        <span class="products products-category">Tradicional</span>
-                                        <span class="products products-name">Texas Burguer</span>
-                                        <span class="products products-price">R$25,50</span>
-                                    </div>
-                                </a>
-
-                            
-
-                       
-                                <!-- Propaganda do produto 4 -->
-
-                                <a class="products-item" href="#">
-
-                                    <img src="../src/IMAGES-BURGER/burger4.png" alt="" class="products_image">
-                                    <div class="infor">
-                                        <span class="products products-category">Tradicional</span>
-                                        <span class="products products-name">Texas Burguer</span>
-                                        <span class="products products-price">R$25,50</span>
-                                    </div>
-                                </a>
-
-                                <!-- Propaganda do produto 5 -->
-
-                                <a class="products-item" href="#">
-
-                                    <img src="../src/IMAGES-BURGER/burger1.png" alt="Hamburguer 5 do catálogo" class="products_image">
-                                    <div class="infor">
-                                        <span class="products products-category">Tradicional</span>
-                                        <span class="products products-name">Texas Burguer</span>
-                                        <span class="products products-price">R$25,50</span>
-                                    </div>
-                                </a>
-
-                                <!-- Propaganda do produto 6 -->
-
-                                <a class="products-item" href="#">
-                                    <div class="promocao">Promoção</div>
-                                    <img src="../src/IMAGES-BURGER/burger4.png" alt="Hamburguer 6 do catálogo" class="products_image">
-                                    <div class="infor">
-                                        <span class="products products products-category">Tradicional</span>
-                                        <span class="products products products-name">Texas Burguer</span>
-                                        <span class="products products products-price">R$25,50</span>
-                                    </div>
-                                </a>
-                                
-             
-                                </section>
-                    </main>
         
-                    <footer class="rodape">
-                        <img src="../src/IMAGES-BURGER/Ifood • Burger.png" alt="">
-                        <p>powered by Pablo Ricardo.</p>
-                    </footer>
-                    <!-- Início do rodapé -->
-            </body> 
-        </html>
+
+    
+            <!-- Propaganda do produto 4 -->
+
+            <a class="products-item" href="#">
+
+                <img src="../src/IMAGES-BURGER/burger4.png" alt="" class="products_image">
+                <div class="infoTotal">
+                    <div class="infor">
+                        <span class="products products products-category">Picante</span>
+                        <span class="products products products-name">Jalapeño Burguer</span>
+                        <span class="products products products-price">R$28,50</span>
+                    </div>
+
+                    <button class="buyItem"
+                    onclick="pedido(event)"
+                    data-name="Jalapeño Burguer"
+                    data-price="28.50"
+                    ></button>
+                    
+                </div>
+            </a>
+
+            <!-- Propaganda do produto 5 -->
+
+            <a class="products-item" href="#">
+
+                <img src="../src/IMAGES-BURGER/burger1.png" alt="Hamburguer 5 do catálogo" class="products_image">
+                <div class="infoTotal">
+                    <div class="infor">
+                        <span class="products products products-category">Furioso</span>
+                        <span class="products products products-name">Mega Stacker 3.0</span>
+                        <span class="products products products-price">R$34,99</span>
+                    </div>
+
+                    <button class="buyItem"
+                    onclick="pedido(event)"
+                    data-name="Mega Stacker 3.0"
+                    data-price="34.99"
+                    ></button>
+                    
+                </div>
+            </a>
+
+            <!-- Propaganda do produto 6 -->
+
+            <a class="products-item" href="#">
+                <div class="promocao">Promoção</div>
+                <img src="../src/IMAGES-BURGER/burger4.png" alt="Hamburguer 6 do catálogo" class="products_image">
+                <div class="infoTotal">
+                    <div class="infor">
+                        <span class="products products products-category">Furioso</span>
+                        <span class="products products products-name">X-Bacon</span>
+                        <span class="products products products-price">R$27,50</span>
+                    </div>
+
+                    <button class="buyItem"
+                    onclick="pedido(event)"
+                    data-name="X-Bacon"
+                    data-price="27.50"
+                    ></button>
+                    
+                </div>
+            </a>
+            
+
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <img src="../src/IMAGES-BURGER/Ifood • Burger.png" alt="">
+        <p>powered by Pablo Ricardo.</p>
+    </footer>
+
+        <!--Modal-->
+        <section id="modal">
+            <div class="modal__container">
+                <img src="../src/IMAGES-BURGER/Ifood • Burger.png" alt="">
+                <h2>Seu carrinho</h2>
+                
+                <div class="modal__conteudo">
+                    <div class="modal__conteudo__container">
+                        
+                    </div>
+                </div>
+                <p class="totalPagar">
+                    Total a pagar:
+                    <span class="total">0.00</span>
+                </p>
+                <h3 class="endereco">Endereço</h3>
+                <input 
+                    class="endereco__campo"
+                    type="text" placeholder="Digite seu endereço completo..."
+                 >
+                <div class="finalizar">
+                    <div class="finalizarFechar">
+                        Fechar
+                    </div>
+                    <button>Finalizar Pedido</button>
+                </div>
+            </div>
+        </section>
+        <!--Fim Modal-->
+
+        <script src="../js/script.js"></script>
+</body> 
+</html>

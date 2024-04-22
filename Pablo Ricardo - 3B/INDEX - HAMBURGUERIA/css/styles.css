@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -100,6 +101,10 @@ body{
     cursor: pointer;
 }
 
+.btn-pedido:hover{
+    background-color: #dd6114;
+}
+
 /* texto do botão */
 .btn-texto{
     font-family: Inter;
@@ -169,7 +174,7 @@ h2{
 
 /* FORMATAÇÃO DO MENU DE HAMBURGUERS - SECTION 3*/
 
-.source-catalog{
+#source-catalog{
     display: flex;
     margin-top: 5%;
     justify-content: center;
@@ -247,7 +252,7 @@ h2{
 .infor{
     width: 100%;
     height: 20vh;
-    background-color: #1f1f1f;
+    margin: auto;
     display: flex;
     flex-direction: column;
     padding-left: 5%;
@@ -256,6 +261,154 @@ h2{
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
+
+.infoTotal{
+    display: flex;
+    background-color: #1f1f1f;
+}
+
+.buyItem{
+    background-color:#FE6A0F;
+    background-image: url(../src/IMAGES-BURGER/shopping-cart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25%;
+    height: 6vh;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    display: flex;
+    margin: auto;
+    transition: all 0.3s;
+}
+
+.buyItem:hover{
+    background-color:#e26010;
+    width: 30%;
+    transition: all 0.3s;
+}
+#modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* Barra de Rolagem */
+    overflow: auto;
+}
+
+/* Modal */
+.modal__container {
+    width: 100%;
+    max-width: 653px;
+    background-color:#1F1F1F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 4%;
+    border-radius: 4px;
+}
+
+.modal__container h2 {
+    width: 100%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.modal__conteudo {
+    width: 100%;
+    max-width: 582px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: Inter;
+ 
+}
+
+.buttonModalRemove {
+    font-size: 1.1rem;
+    font-family: Inter;
+    font-weight: bold;
+    border: none;
+    background-color: #FF3131;
+    color: #f6f7f8;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal__conteudo__container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.endereco {
+    font-family: Inter;
+    margin-top: 14px;
+    margin-bottom: 4px;
+}
+
+.endereco__campo {
+    width: 100%;
+    max-width: 582px;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.endereco__campo::placeholder {
+    color: #C1C1C1;
+}
+
+.totalPagar{
+    font-family: Inter;
+    font-size: 1.25rem;
+    margin: 5% auto;
+
+}
+.finalizar {
+    margin-top: 32px;
+    width: 100%;
+    max-width: 582px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-family: Inter;
+    cursor: pointer;
+}
+
+.finalizar button {
+    width: 100%;
+    max-width: 191px;
+    height: 6vh;
+    padding: 8px;
+    font-size: 1rem;
+    font-family: Inter;
+    font-weight: bold;
+    color: #f6f7f8;
+    background-color: #5ad40fb7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.finalizar button:hover{
+    background-color: #43990db7;    
+}
+/*Fim Modal*/
 
 .rodape {
     width: 100%;
@@ -370,9 +523,13 @@ h2{
     .products_image{
         width: 60%;
     }
-}
 
-/* FORMATAÇÃO RODAPÉ */
+    #modal{
+        max-width: 400px;
+       
+    }
+
+    /* FORMATAÇÃO RODAPÉ */
 
 .rodape{
     margin-top: 8%;
@@ -388,6 +545,8 @@ h2{
 .rodape img{
     width: 50%;
     margin: auto;
+}
+
 }
 
 @media (max-width:375px){
