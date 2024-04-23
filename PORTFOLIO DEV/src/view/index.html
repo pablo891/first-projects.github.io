@@ -1,225 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="../images/location.ico"
-      type="image/x-icon"
-    />
-    <title>PORTFÓLIO DEV</title>
-   
-  </head>
-  <header id="cabecalho">
-    <div class="img">
-      <img
-        src="../images/logotype-menu.png"
-        alt="Logotipo do site"
-        class="menu-image"
-      />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="shortcut icon" href="../images/location.ico" type="image/x-icon" />
+  <title>PORTFÓLIO DEV</title>
+
+</head>
+<header id="cabecalho">
+  <div class="img">
+    <img src="../images/logotype-menu.png" alt="Logotipo do site" class="menu-image" />
+  </div>
+  <nav class="container">
+    <ul class="lista">
+      <li class="menu-ancora">
+        <a href="#section-one" class="menu-ancora"> Início </a>
+      </li>
+      <li class="menu-ancora">
+        <a href="#section-two" id="btn-especialidades"> Especialidades </a>
+      </li>
+      <li class="menu-ancora">
+        <a href="#section-three" id="btn-projetos"> Projetos </a>
+      </li>
+
+      <li class="menu-ancora">
+        <a href="#section-four" id="btn-projetos"> Sobre mim </a>
+      </li>
+    </ul>
+  </nav>
+  <button class="contato">
+    <a href="#section-five">Contato</a>
+  </button>
+</header>
+
+<body>
+  <section class="hidden section-one" id="section-one">
+    <div class="hidden left-side">
+      <h1 class="hidden titulo_one">Web Designer & Developer</h1>
+      <h2>
+        Transforme seu negócio com um investimento de
+        <strong style="color: #f69100">excelência.</strong>
+      </h2>
+      <p class="texto-one">
+        Revolucionando a estrutura do seu site e proporcionando identidade
+        visual compacta para sua empresa
+      </p>
+
+      <a class="redirect" href="#section-three">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+          class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+        </svg>
+        Conheça mais
+      </a>
     </div>
-    <nav class="container">
-      <ul class="lista">
-        <li class="menu-ancora">
-          <a href="" class="menu-ancora"> Início </a>
-        </li>
-        <li class="menu-ancora">
-          <a href="#section-two" id="btn-especialidades"> Especialidades </a>
-        </li>
-        <li class="menu-ancora">
-          <a href="#section-three" id="btn-projetos"> Projetos </a>
-        </li>
+    <div class="hidden right-side">
+      <div class="hidden divImg"><img src="../images/background site.png" alt=""></div>
+      <em>Pablo Ricardo, Developer Junior</em>
+    </div>
+  </section>
 
-        <li class="menu-ancora">
-          <a href="#" id="btn-projetos"> Sobre mim </a>
-        </li>
-      </ul>
-    </nav>
-    <button class="contato">
-      <a href="#">Contato</a>
-    </button>
-  </header>
+  <main class="hidden section-two" id="section-two">
+    <h1 class="hidden titulo_two">Minhas Especialidades</h1>
 
-  <body>
-    <section class="hidden section-one">
-      <div class="left-side">
-        <h1 class="titulo_one">Web Designer & Developer</h1>
-        <h2>
-          Transforme seu negócio com um investimento de
-          <strong style="color: #f69100">excelência.</strong>
-        </h2>
-        <p class="texto-one">
-          Revolucionando a estrutura do seu site e proporcionando identidade
-          visual compacta para sua empresa
-        </p>
-
-        <a class="redirect" href="#section-three">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
-          </svg> 
-          Conheça mais
-        </a>
-      </div>
-      <div class="right-side">
-        <div class="divImg"><img src="../images/background site.png" alt=""></div>
-        <em>Pablo Ricardo, Developer Junior</em>
-      </div>
-    </section>
-
-    <main class="hidden section-two" id="section-two">
-      <h1 class="hidden titulo_two">Minhas Especialidades</h1>
-
-      <section class="my-skills">
-        <!-- SKILLS -->
-        <section class="hidden skills-item">
-          <img src="../images/html.png" alt="" />
-          <div class="percent">
-            <div class="division">
-              <p class="percent-tittle">
-                <em>HTML</em>
-              </p>
-              <p class="percent-number">85%</p>
-            </div>
-
-            <div class="forma"></div>
+    <section class="my-skills">
+      <!-- SKILLS -->
+      <section class="hidden skills-item">
+        <img src="../images/html.png" alt="" />
+        <div class="percent">
+          <div class="division">
+            <p class="percent-tittle">
+              <em>HTML</em>
+            </p>
+            <p class="percent-number">85%</p>
           </div>
-        </section>
 
-        <!-- SKILLS -->
-        <section class="hidden skills-item">
-          <img src="../images/js.png" class="js" alt="" />
-          <div class="percent">
-            <div class="division">
-              <p class="percent-tittle">
-                <em>JavaScript</em>
-              </p>
-              <p class="percent-number">30%</p>
-            </div>
-
-            <div class="forma"></div>
-          </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section class="hidden skills-item">
-          <img src="../images/css-3.png" alt="" />
-          <div class="percent">
-            <div class="division">
-              <p class="percent-tittle">
-                <em>CSS</em>
-              </p>
-              <p class="percent-number">75%</p>
-            </div>
-
-            <div class="forma"></div>
-          </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section class="hidden skills-item">
-          <img src="../images/react.png" alt="" />
-          <div class="percent">
-            <div class="division">
-              <p class="percent-tittle">
-                <em>ReactJS</em>
-              </p>
-              <p class="percent-number">20%</p>
-            </div>
-
-            <div class="forma"></div>
-          </div>
-        </section>
+          <div class="forma html"></div>
+        </div>
       </section>
-    </main>
 
-    <main class="hidden" id="section-three">
-      <h1 class="titulo_two">Meus projetos</h1>
+      <!-- SKILLS -->
+      <section class="hidden skills-item">
+        <img src="../images/js.png" class="js" alt="" />
+        <div class="percent">
+          <div class="division">
+            <p class="percent-tittle">
+              <em>JavaScript</em>
+            </p>
+            <p class="percent-number">30%</p>
+          </div>
 
-      <section class="projetos">
-        <a href="" class="box-projects">
-          <img
-            src="../images/WhatsApp Image 2024-01-16 at 16.57.36.jpeg"
-            class="projects-image"
-            alt=""
-          />
-          <h1 class="box-titulo">React JS</h1>
-          <p class="texto-espec">lorem ipsum</p>
-        </a>
-
-        <a href="" class="box-projects">
-          <img
-            src="../images/WhatsApp Image 2024-01-16 at 16.57.36.jpeg"
-            class="projects-image"
-            alt=""
-          />
-          <h1 class="box-titulo">React JS</h1>
-          <p class="texto-espec">lorem ipsum</p>
-        </a>
-
-        <a href="" class="box-projects">
-          <img
-            src="../images/WhatsApp Image 2024-01-16 at 16.57.36.jpeg"
-            class="projects-image"
-            alt=""
-          />
-          <h1 class="box-titulo">React JS</h1>
-          <p class="texto-espec">lorem ipsum</p>
-        </a>
-
-        <a href="" class="box-projects">
-          <img
-            src="../images/WhatsApp Image 2024-01-16 at 16.57.36.jpeg"
-            class="projects-image"
-            alt=""
-          />
-          <h1 class="box-titulo">React JS</h1>
-          <p class="texto-espec">lorem ipsum</p>
-        </a>
-
-        <a href="" class="box-projects">
-          <img
-            src="../images/WhatsApp Image 2024-01-16 at 16.57.36.jpeg"
-            class="projects-image"
-            alt=""
-          />
-          <h1 class="box-titulo">React JS</h1>
-          <p class="texto-espec">lorem ipsum</p>
-        </a>
-
-        <a href="" class="box-projects">
-          <img
-            src="../images/WhatsApp Image 2024-01-16 at 16.57.36.jpeg"
-            class="projects-image"
-            alt=""
-          />
-          <h1 class="box-titulo">React JS</h1>
-          <p class="texto-espec">lorem ipsum</p>
-        </a>
+          <div class="forma javaScript"></div>
+        </div>
       </section>
-    </main>
 
-    <section class="hidden section-four" id="section-four">
-      <img
-        src="../images/conexão.png"
-        alt="Imagem da Biografia"
-        class="secundary-image"
-      />
-      <div class="texto-biografia">
-        <h1>
-          Muito prazer, sou o
-          <strong style="color: #f69100">Pablo Ricardo</strong>
-        </h1>
-        <address>São Luís, Maranhão, Brazil</address>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum
-          faucibus vitae aliquet nec ullamcorper. Potenti nullam ac tortor vitae
-          purus faucibus. Potenti nullam ac tortor vitae purus faucibus
-        </p>
-      </div>
+      <!-- SKILLS -->
+      <section class="hidden skills-item">
+        <img src="../images/css-3.png" alt="" />
+        <div class="percent">
+          <div class="division">
+            <p class="percent-tittle">
+              <em>CSS</em>
+            </p>
+            <p class="percent-number">75%</p>
+          </div>
+
+          <div class="forma css"></div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="hidden skills-item">
+        <img src="../images/react.png" alt="" />
+        <div class="percent">
+          <div class="division">
+            <p class="percent-tittle">
+              <em>ReactJS</em>
+            </p>
+            <p class="percent-number">20%</p>
+          </div>
+
+          <div class="forma reactJs"></div>
+        </div>
+      </section>
     </section>
-    <script src="../js/script.js"></script>
-  </body>
+  </main>
+
+  <main class="hidden section-three" id="section-three">
+    <h1 class="hidden titulo_two">Meus projetos</h1>
+
+    <section class=" hidden projetos">
+      <a href="" class="hidden box-projects">
+      </a>
+
+      <a href="" class="hidden box-projects">
+      </a>
+
+      <a href="" class="hidden box-projects">
+      </a>
+
+      <a href="" class="hidden box-projects">
+      </a>
+
+      <a href="" class="hidden box-projects">
+      </a>
+
+      <a href="" class="hidden box-projects">
+      </a>
+    </section>
+  </main>
+
+  <section class="hidden section-four" id="section-four">
+    <img src="../images/foto-pablo.png" alt="Imagem da Biografia" class="secundary-image" />
+    <div class="texto-biografia">
+      <h1>
+        Muito prazer, sou o
+        <strong style="color: #f69100">Pablo Ricardo</strong>
+      </h1>
+      <address>São Luís, Maranhão, Brazil</address>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum
+        faucibus vitae aliquet nec ullamcorper. Potenti nullam ac tortor vitae
+        purus faucibus. Potenti nullam ac tortor vitae purus faucibus
+      </p>
+    </div>
+  </section>
+
+  <section class="hidden section-five" id="section-five">
+    <div class="socialMedia">
+
+    </div>
+    <div class="formalContact">
+
+    </div>
+  </section>
+  <script src="../js/script.js"></script>
+</body>
+
 </html>
